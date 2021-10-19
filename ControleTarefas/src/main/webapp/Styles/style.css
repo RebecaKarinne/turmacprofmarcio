@@ -1,0 +1,42 @@
+/* Removendo Bullets e Identação das Listas --> */
+body {
+	background-color:  lightblue;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+    }
+    
+    /* Posicionando Itens da Lista */
+    ul li {
+    position: relative;
+    }
+    
+    /* Posicionando itens do sub-menu */
+    li ul {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+    }
+    
+    /* Melhorando aparência dos links */
+    ul li a {
+       display: block;
+       text-decoration: none;
+       color: rgb(255, 0, 128);
+       background: #fff;
+       padding: 5px;
+       border: 1px solid #ccc;
+    }
+    /* Exibindo o Submenu */
+    li:hover ul { display: block; }
+    
+    /* Estilizando a Classe Hover. */
+    ul li a:hover{
+    text-decoration:underline;
+    font-weight: bold;
+    background: #ccc; }
